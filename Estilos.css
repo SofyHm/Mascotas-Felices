@@ -1,0 +1,672 @@
+/*=====================================================
+            VARIABLES GENERALES
+=====================================================*/
+
+:root{
+
+    --verde-principal:#2e8b57;
+    --verde-secundario:#3cb371;
+    --verde-hover:#246b45;
+    --verde-claro:#f4fff6;
+
+    --blanco:#ffffff;
+    --gris:#333333;
+    --gris-claro:#ececec;
+
+    --radio:12px;
+
+    --sombra:0 4px 12px rgba(0,0,0,.15);
+
+    --transicion:.30s;
+
+}
+
+/*=====================================================
+                RESETEO
+=====================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    background:var(--verde-claro);
+
+    color:var(--gris);
+
+    line-height:1.6;
+
+}
+
+/*=====================================================
+                ENCABEZADO
+=====================================================*/
+
+header{
+
+    background:var(--verde-principal);
+
+    color:white;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:var(--sombra);
+
+}
+
+header h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+header p{
+
+    font-size:18px;
+
+}
+
+/*=====================================================
+                    MENÚ
+=====================================================*/
+
+nav{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+    background:var(--verde-secundario);
+
+    padding:18px;
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    transition:var(--transicion);
+
+}
+
+nav a:hover{
+
+    transform:translateY(-3px);
+
+    text-decoration:underline;
+
+}
+
+/*=====================================================
+                    MAIN
+=====================================================*/
+
+main{
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:40px;
+
+    display:grid;
+
+    grid-template-columns:3fr 1fr;
+
+    gap:30px;
+
+}
+
+/*=====================================================
+                PRODUCTOS
+=====================================================*/
+
+#productos h2{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:var(--verde-principal);
+
+}
+
+.productos{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+.tarjeta-producto{
+
+    background:white;
+
+    border-radius:var(--radio);
+
+    padding:20px;
+
+    text-align:center;
+
+    box-shadow:var(--sombra);
+
+    transition:.35s;
+
+}
+
+.tarjeta-producto:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.imagen-producto{
+
+    font-size:60px;
+
+    margin-bottom:15px;
+
+}
+
+.tarjeta-producto h3{
+
+    margin-bottom:10px;
+
+}
+
+.tarjeta-producto p{
+
+    min-height:70px;
+
+    margin-bottom:15px;
+
+}
+
+.tarjeta-producto h4{
+
+    color:var(--verde-principal);
+
+    margin-bottom:15px;
+
+    font-size:22px;
+
+}
+
+/*=====================================================
+                BOTONES
+=====================================================*/
+
+button{
+
+    width:100%;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    cursor:pointer;
+
+    background:var(--verde-principal);
+
+    color:white;
+
+    font-weight:bold;
+
+    transition:var(--transicion);
+
+}
+
+button:hover{
+
+    background:var(--verde-hover);
+
+    transform:scale(1.03);
+
+}
+
+/*=====================================================
+                CARRITO
+=====================================================*/
+
+.carrito{
+
+    background:white;
+
+    border-radius:var(--radio);
+
+    padding:20px;
+
+    box-shadow:var(--sombra);
+
+    position:sticky;
+
+    top:90px;
+
+    height:max-content;
+
+}
+
+.carrito h2{
+
+    text-align:center;
+
+    margin-bottom:20px;
+
+}
+
+#lista-carrito{
+
+    min-height:120px;
+
+}
+
+.vacio{
+
+    text-align:center;
+
+    color:#777;
+
+    font-style:italic;
+
+}
+
+.item-carrito{
+
+    border-bottom:1px solid var(--gris-claro);
+
+    padding:12px 0;
+
+}
+
+.item-carrito h4{
+
+    margin-bottom:5px;
+
+}
+
+.item-carrito p{
+
+    margin-bottom:8px;
+
+}
+
+.controles{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:8px;
+
+}
+
+.controles button{
+
+    width:35px;
+
+}
+
+.resumen{
+
+    margin-top:20px;
+
+    border-top:2px solid var(--gris-claro);
+
+    padding-top:15px;
+
+}
+
+.resumen p{
+
+    margin:8px 0;
+
+}
+
+#total{
+
+    color:var(--verde-principal);
+
+    margin-top:12px;
+
+}
+
+/*=====================================================
+            BENEFICIOS
+=====================================================*/
+
+#beneficios{
+
+    padding:60px 30px;
+
+}
+
+#beneficios h2{
+
+    text-align:center;
+
+    color:var(--verde-principal);
+
+    margin-bottom:35px;
+
+}
+
+.beneficios{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:25px;
+
+}
+
+.beneficio{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:var(--radio);
+
+    text-align:center;
+
+    box-shadow:var(--sombra);
+
+    transition:.30s;
+
+}
+
+.beneficio:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/*=====================================================
+                CONTACTO
+=====================================================*/
+
+#contacto{
+
+    padding:60px 30px;
+
+}
+
+#contacto h2{
+
+    text-align:center;
+
+    color:var(--verde-principal);
+
+    margin-bottom:25px;
+
+}
+
+form{
+
+    max-width:700px;
+
+    margin:auto;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+input,
+textarea{
+
+    padding:14px;
+
+    border:2px solid #cccccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    transition:.30s;
+
+}
+
+input:focus,
+textarea:focus{
+
+    outline:none;
+
+    border-color:var(--verde-principal);
+
+}
+
+textarea{
+
+    resize:none;
+
+    min-height:150px;
+
+}
+
+/*=====================================================
+                FOOTER
+=====================================================*/
+
+footer{
+
+    margin-top:50px;
+
+    background:var(--verde-principal);
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+}
+
+footer p{
+
+    margin:6px 0;
+
+}
+
+/*=====================================================
+            MENSAJES
+=====================================================*/
+
+#mensaje{
+
+    margin-top:15px;
+
+    text-align:center;
+
+    color:var(--verde-principal);
+
+    font-weight:bold;
+
+}
+
+/*=====================================================
+            ANIMACIONES
+=====================================================*/
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.tarjeta-producto,
+.beneficio,
+.carrito{
+
+    animation:aparecer .6s ease;
+
+}
+
+/*=====================================================
+            RESPONSIVE
+=====================================================*/
+
+@media(max-width:1000px){
+
+    main{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .carrito{
+
+        position:relative;
+
+        top:0;
+
+    }
+
+}
+
+@media(max-width:700px){
+
+    header h1{
+
+        font-size:32px;
+
+    }
+
+    nav{
+
+        flex-wrap:wrap;
+
+        gap:15px;
+
+    }
+
+    main{
+
+        padding:20px;
+
+    }
+
+    #beneficios,
+    #contacto{
+
+        padding:40px 20px;
+
+    }
+
+}
+/*=====================================
+        CONTADOR
+=====================================*/
+
+.contador-carrito{
+
+    background:#ffffff;
+
+    text-align:center;
+
+    padding:15px;
+
+    font-weight:bold;
+
+    color:var(--verde-principal);
+
+    box-shadow:var(--sombra);
+
+}
+/*=====================================
+        BUSCADOR
+=====================================*/
+
+.buscador{
+
+    margin-bottom:35px;
+
+}
+
+.buscador input{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:2px solid #cccccc;
+
+    font-size:17px;
+
+}
+/*=====================================
+    BOTÓN ARRIBA
+=====================================*/
+
+#arriba{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    font-size:24px;
+
+    display:none;
+
+}
