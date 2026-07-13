@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mascotas Felices</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <!--=========================================
+                ENCABEZADO
+    ==========================================-->
+
+    <header>
+
+        <div class="contenedor-header">
+
+            <h1>🐾 Mascotas Felices</h1>
+
+            <p>¡Todo para los peludos que alegran tu hogar!</p>
+
+        </div>
+
+    </header>
+
+    <!--=========================================
+                MENÚ
+    ==========================================-->
+
+    <nav>
+
+        <a href="#">Inicio</a>
+
+        <a href="#productos">Productos</a>
+
+        <a href="#beneficios">Beneficios</a>
+
+        <a href="#contacto">Contacto</a>
+
+    </nav>
+
+    <!--=========================================
+                CONTENIDO
+    ==========================================-->
+
+    <main>
+        <section class="buscador">
+
+    <input
+
+        type="text"
+
+        id="buscar"
+
+        placeholder="🔍 Buscar producto..."
+
+    >
+
+</section>
+
+        <!--============================
+                PRODUCTOS
+        ==============================-->
+
+        <section id="productos">
+
+            <h2>Productos Destacados</h2>
+
+            <div class="productos">
+
+                <!-- Producto 1 -->
+
+                <article class="tarjeta-producto">
+
+                    <div class="imagen-producto">
+                        🦴
+                    </div>
+
+                    <h3>Huesos para perros</h3>
+
+                    <p>
+                        Para consentirlos de la forma más saludable posible.
+                    </p>
+
+                    <h4>$2.500</h4>
+
+                    <button onclick="agregarProducto(1)">
+                        Agregar al carrito
+                    </button>
+
+                </article>
+
+                <!-- Producto 2 -->
+
+                <article class="tarjeta-producto">
+
+                    <div class="imagen-producto">
+                        🐱
+                    </div>
+
+                    <h3>Cama para gatos</h3>
+
+                    <p>
+                        ¡Suave y del mejor material para el rey de la casa!
+                    </p>
+
+                    <h4>$8.900</h4>
+
+                    <button onclick="agregarProducto(2)">
+                        Agregar al carrito
+                    </button>
+
+                </article>
+
+                <!-- Producto 3 -->
+
+                <article class="tarjeta-producto">
+
+                    <div class="imagen-producto">
+                        🎾
+                    </div>
+
+                    <h3>Juguetes</h3>
+
+                    <p>
+                        ¡Diversión infinita para los peludos!
+                    </p>
+
+                    <h4>$3.200</h4>
+
+                    <button onclick="agregarProducto(3)">
+                        Agregar al carrito
+                    </button>
+
+                </article>
+
+                <!-- Producto 4 -->
+
+                <article class="tarjeta-producto">
+
+                    <div class="imagen-producto">
+                        🐶
+                    </div>
+
+                    <h3>Collares</h3>
+
+                    <p>
+                        Los más resistentes y del estilo que quieras.
+                    </p>
+
+                    <h4>$4.800</h4>
+
+                    <button onclick="agregarProducto(4)">
+                        Agregar al carrito
+                    </button>
+
+                </article>
+
+                <!-- Producto 5 -->
+
+                <article class="tarjeta-producto">
+
+                    <div class="imagen-producto">
+                        🍖
+                    </div>
+
+                    <h3>Alimento Premium</h3>
+
+                    <p>
+                        Nutrición completa para perros y gatos.
+                    </p>
+
+                    <h4>$9.600</h4>
+
+                    <button onclick="agregarProducto(5)">
+                        Agregar al carrito
+                    </button>
+
+                </article>
+
+                <!-- Producto 6 -->
+
+                <article class="tarjeta-producto">
+
+                    <div class="imagen-producto">
+                        🥣
+                    </div>
+
+                    <h3>Comedero</h3>
+
+                    <p>
+                        Antideslizante y fácil de limpiar.
+                    </p>
+
+                    <h4>$2.900</h4>
+
+                    <button onclick="agregarProducto(6)">
+                        Agregar al carrito
+                    </button>
+
+                </article>
+
+                <!-- Producto 7 -->
+
+                <article class="tarjeta-producto">
+
+                    <div class="imagen-producto">
+                        🪮
+                    </div>
+
+                    <h3>Cepillo</h3>
+
+                    <p>
+                        Mantiene el pelaje brillante y saludable.
+                    </p>
+
+                    <h4>$3.600</h4>
+
+                    <button onclick="agregarProducto(7)">
+                        Agregar al carrito
+                    </button>
+
+                </article>
+
+                <!-- Producto 8 -->
+
+                <article class="tarjeta-producto">
+
+                    <div class="imagen-producto">
+                        🐦
+                    </div>
+
+                    <h3>Juguete para aves</h3>
+
+                    <p>
+                        Ideal para mantener activas a tus mascotas.
+                    </p>
+
+                    <h4>$2.200</h4>
+
+                    <button onclick="agregarProducto(8)">
+                        Agregar al carrito
+                    </button>
+
+                </article>
+
+            </div>
+
+        </section>
+
+        <!--============================
+                CARRITO
+        ==============================-->
+
+        <aside class="carrito">
+
+            <h2>🛒 Carrito</h2>
+
+            <div id="lista-carrito">
+
+                <p class="vacio">
+                    El carrito está vacío.
+                </p>
+
+            </div>
+
+            <div class="resumen">
+
+                <p id="subtotal">
+                    Subtotal: $0
+                </p>
+
+                <p id="iva">
+                    IVA (21%): $0
+                </p>
+
+                <h3 id="total">
+                    Total: $0
+                </h3>
+
+            </div>
+
+            <button id="vaciar">
+                Vaciar carrito
+            </button>
+
+            <button id="comprar">
+                Confirmar compra
+            </button>
+
+            <p id="mensaje"></p>
+
+        </aside>
+
+    </main>
+
+    <!--=========================================
+                BENEFICIOS
+    ==========================================-->
+
+    <section id="beneficios">
+
+        <h2>¿Por qué elegir Mascotas Felices?</h2>
+
+        <div class="beneficios">
+
+            <div class="beneficio">
+
+                <h3>🚚 Envíos rápidos</h3>
+
+                <p>
+                    Recibe tus productos en poco tiempo.
+                </p>
+
+            </div>
+
+            <div class="beneficio">
+
+                <h3>⭐ Calidad garantizada</h3>
+
+                <p>
+                    Solo trabajamos con productos de excelente calidad.
+                </p>
+
+            </div>
+
+            <div class="beneficio">
+
+                <h3>💚 Atención personalizada</h3>
+
+                <p>
+                    Siempre pensamos en el bienestar de tus mascotas.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--=========================================
+                CONTACTO
+    ==========================================-->
+
+    <section id="contacto">
+
+        <h2>Contáctanos</h2>
+
+        <form>
+
+            <input
+                type="text"
+                placeholder="Nombre">
+
+            <input
+                type="email"
+                placeholder="Correo electrónico">
+
+            <textarea
+                placeholder="Escribe tu mensaje"></textarea>
+
+            <button type="submit">
+                Enviar mensaje
+            </button>
+
+        </form>
+
+    </section>
+
+    <!--=========================================
+                PIE DE PÁGINA
+    ==========================================-->
+
+    <footer>
+
+        <p>
+
+            🐾 Mascotas Felices
+
+        </p>
+
+        <p>
+
+            Mascota feliz, vida feliz.
+
+        </p>
+
+    </footer>
+
+    <script src="js/carrito.js"></script>
+<button id="arriba">
+
+⬆️
+
+</button>
+</body>
+
+</html>
+
+<css>
+    <div class="contador-carrito">
+
+    🛒 Productos en el carrito:
+    <span id="contador">0</span>
+
+</div>
