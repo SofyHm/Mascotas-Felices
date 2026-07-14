@@ -51,40 +51,38 @@ body{
                 ENCABEZADO
 =====================================================*/
 
-header{
+.contenedor-header{
 
-    background:var(--verde-principal);
+    display:flex;
 
-    color:white;
+    justify-content:center;
 
-    padding:35px;
+    align-items:center;
 
-    text-align:center;
-
-    box-shadow:var(--sombra);
+    gap:40px;
 
 }
 
-header h1{
+.head-mascota{
 
-    font-size:42px;
+    display:flex;
 
-    margin-bottom:10px;
+    flex-direction:column;
 
-}
-
-header p{
-
-    font-size:18px;
+    align-items:center;
 
 }
-.log {
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
+
+.logo{
+
+    width:120px;
+
+    height:120px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+
 }
 
 
