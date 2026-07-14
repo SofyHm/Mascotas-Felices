@@ -54,9 +54,7 @@ body{
 header{
 
     background: var(--verde-principal);
-
     color: white;
-
     padding: 20px 40px;
 
 }
@@ -86,6 +84,18 @@ header{
     object-fit: cover;
     border-radius: 15px;
     flex-shrink: 0;
+
+}
+
+header h1{
+
+    font-size: 42px;
+    margin-bottom: 8px;
+
+}
+
+header p{
+    font-size: 18px;
 
 }
 
