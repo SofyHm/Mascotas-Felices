@@ -107,16 +107,16 @@ header p{
 nav{
 
     display:flex;
-
-    justify-content:center;
-
+            
+    justify-content:space-between;
+            
     align-items:center;
-
+            
     gap:30px;
 
     background:var(--verde-secundario);
 
-    padding:18px;
+    padding:20px 40px;
 
     position:sticky;
 
@@ -124,6 +124,11 @@ nav{
 
     z-index:100;
 
+}
+
+.menu{
+    display:flex;
+    gap:40px;
 }
 
 nav a{
