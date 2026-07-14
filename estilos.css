@@ -100,23 +100,15 @@ header p{
 }
 
 
-/*=====================================================
-                    MENÚ
-=====================================================*/
+/*=====================================
+            MENÚ
+=====================================*/
 
 nav{
 
-    display:flex;
-            
-    justify-content:center;
-            
-    align-items:center;
-            
-    gap:60px;
+    background: var(--verde-secundario);
 
-    background:var(--verde-secundario);
-
-    padding:20px;
+    padding:18px;
 
     position:sticky;
 
@@ -127,11 +119,20 @@ nav{
 }
 
 .menu{
+
     display:flex;
-    gap:40px;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+
 }
 
-nav a{
+.menu a{
 
     color:white;
 
@@ -139,15 +140,21 @@ nav a{
 
     font-weight:bold;
 
-    transition:var(--transicion);
+    font-size:18px;
+
+    transition:.3s;
+
+    padding:10px 15px;
+
+    border-radius:10px;
 
 }
 
-nav a:hover{
+.menu a:hover{
+
+    background:rgba(255,255,255,.2);
 
     transform:translateY(-3px);
-
-    text-decoration:underline;
 
 }
 
