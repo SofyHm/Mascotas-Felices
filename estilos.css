@@ -185,14 +185,15 @@ main{
     color:var(--verde-principal);
 
 }
-
 .productos{
 
     display:grid;
 
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(250px,250px));
 
-    gap:25px;
+    justify-content:center;
+
+    gap:30px;
 
 }
 
