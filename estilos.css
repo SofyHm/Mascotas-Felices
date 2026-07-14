@@ -73,7 +73,7 @@ header{
 
 .head-mascota{
 
-    tex-align: center;
+    text-align:center;
 
 }
 
@@ -108,15 +108,15 @@ nav{
 
     display:flex;
             
-    justify-content:space-between;
+    justify-content:center;
             
     align-items:center;
             
-    gap:30px;
+    gap:60px;
 
     background:var(--verde-secundario);
 
-    padding:20px 40px;
+    padding:20px;
 
     position:sticky;
 
