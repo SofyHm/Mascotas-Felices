@@ -86,17 +86,6 @@ header{
     flex-shrink: 0;
 
 }
-.carrito{
-
-    width:100%;
-
-    max-width:700px;
-
-    margin:50px auto;
-
-    position:static;
-
-}
 
 header h1{
 
@@ -302,19 +291,10 @@ button:hover{
 
 .carrito{
 
-    background:white;
-
-    border-radius:var(--radio);
-
-    padding:20px;
-
-    box-shadow:var(--sombra);
-
-    position:sticky;
-
-    top:90px;
-
-    height:max-content;
+    width:100%;
+    max-width:700px;
+    margin:50px auto;
+    position:static;
 
 }
 
